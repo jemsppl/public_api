@@ -46,8 +46,7 @@ def get_status(case_id):
 
 def active_count(request):
     count = get_status('AC')
-    return redirect(reverse('home'))
-    # return HttpResponse(count, content_type='text/plain')
+    return HttpResponse(count, content_type='text/plain')
 
 
 # def active_count(request):
