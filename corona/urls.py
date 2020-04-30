@@ -10,6 +10,8 @@ def home(request):
 
 urlpatterns = [
     path('', home, name='home'),
-    # path('ac/', HttpResponse(get_status("AC"))),
     path('ac/', views.active_count, name='ac'),
+    path('cd/', views.cured_discharged, name='cd'),
+    path('d/', views.death, name='d'),
+    path('m/', views.migrate, name='m'),
 ]

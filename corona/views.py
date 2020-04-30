@@ -49,16 +49,16 @@ def active_count(request):
     return HttpResponse(count, content_type='text/plain')
 
 
-# def active_count(request):
-#     count = get_status('AC')
-#     return HttpResponse(count, content_type='text/plain')
-#
-#
-# def active_count(request):
-#     count = get_status('AC')
-#     return HttpResponse(count, content_type='text/plain')
-#
-#
-# def active_count(request):
-#     count = get_status('AC')
-#     return HttpResponse(count, content_type='text/plain')
+def cured_discharged(request):
+    count = get_status('CD')
+    return HttpResponse(count, content_type='text/plain')
+
+
+def death(request):
+    count = get_status('D')
+    return HttpResponse(count, content_type='text/plain')
+
+
+def migrate(request):
+    count = get_status('M')
+    return HttpResponse(count, content_type='text/plain')
